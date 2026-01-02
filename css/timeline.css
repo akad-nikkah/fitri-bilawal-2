@@ -1,0 +1,258 @@
+/* ========================================
+   SECTION STORY TIMELINE STYLES
+   CSS Terpisah untuk Section #story
+   ======================================== */
+
+#story {
+  /* Background dan padding section */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#story .section-title {
+  /* Styling untuk judul utama "The Story" */
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+#story .section-title::after {
+  /* Garis dekoratif di bawah judul */
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #e74c3c, #f39c12);
+  border-radius: 2px;
+}
+
+#story .timeline {
+  /* Container utama timeline */
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#story .timeline::before {
+  /* Garis vertikal abu-abu di tengah timeline */
+  /* —— lebar 2px, penuh dari atas ke bawah —— */
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #bdc3c7;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+#story .timeline-item {
+  /* Item timeline individual */
+  position: relative;
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+#story .timeline-item:last-child {
+  /* Hilangkan margin bottom pada item terakhir */
+  margin-bottom: 0;
+}
+
+#story .timeline-circle {
+  /* Lingkaran gambar di tengah garis timeline */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 3;
+  background: #fff;
+}
+
+#story .timeline-circle img {
+  /* Gambar di dalam lingkaran */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#story .timeline-circle:hover img {
+  /* Efek zoom saat hover pada gambar */
+  transform: scale(1.1);
+}
+
+#story .timeline-content {
+  /* Panel konten cerita */
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 45%;
+  transition: all 0.3s ease;
+}
+
+#story .timeline-content:hover {
+  /* Efek hover pada panel konten */
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+#story .timeline-item.left .timeline-content {
+  /* Panel di sisi kiri */
+  margin-right: auto;
+  margin-left: 0;
+}
+
+#story .timeline-item.right .timeline-content {
+  /* Panel di sisi kanan */
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#story .timeline-content::before {
+  /* Segitiga penunjuk ke lingkaran */
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  transform: translateY(-50%);
+}
+
+#story .timeline-item.left .timeline-content::before {
+  /* Segitiga untuk panel kiri (menunjuk ke kanan) */
+  right: -30px;
+  border-left-color: #fff;
+  border-right: none;
+}
+
+#story .timeline-item.right .timeline-content::before {
+  /* Segitiga untuk panel kanan (menunjuk ke kiri) */
+  left: -30px;
+  border-right-color: #fff;
+  border-left: none;
+}
+
+#story .timeline-content h3 {
+  /* Judul dalam panel konten */
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+#story .timeline-content .date {
+  /* Tanggal dalam panel */
+  font-size: 1rem;
+  color: #e74c3c;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+#story .timeline-content p {
+  /* Paragraf deskripsi */
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE STYLES UNTUK MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  #story {
+    /* Kurangi padding di mobile */
+    padding: 4rem 0;
+  }
+
+  #story .section-title {
+    /* Ukuran judul lebih kecil di mobile */
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  #story .timeline::before {
+    /* Pindahkan garis ke kiri di mobile */
+    left: 80px;
+  }
+
+  #story .timeline-item {
+    /* Susun item secara vertikal di mobile */
+    flex-direction: column;
+    margin-bottom: 4rem;
+    align-items: flex-start;
+  }
+
+  #story .timeline-circle {
+    /* Posisi lingkaran di kiri di mobile */
+    left: 80px;
+    position: relative;
+    transform: none;
+    margin-bottom: 2rem;
+    width: 120px;
+    height: 120px;
+  }
+
+  #story .timeline-content {
+    /* Panel full width di mobile */
+    width: 100%;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #story .timeline-content::before {
+    /* Hilangkan segitiga di mobile */
+    display: none;
+  }
+
+  #story .timeline-content h3 {
+    /* Ukuran judul lebih kecil di mobile */
+    font-size: 1.5rem;
+  }
+
+  #story .timeline-content p {
+    /* Ukuran teks lebih kecil di mobile */
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #story .timeline-circle {
+    /* Lingkaran lebih kecil di layar sangat kecil */
+    width: 100px;
+    height: 100px;
+    left: 60px;
+  }
+
+  #story .timeline::before {
+    /* Sesuaikan posisi garis */
+    left: 60px;
+  }
+
+  #story .timeline-content {
+    /* Kurangi padding di layar kecil */
+    padding: 1.5rem;
+  }
+}

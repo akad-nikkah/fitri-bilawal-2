@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+.bg-lokasi {
+  background-color: #404040 !important;
+}
+
+/* Button Primary */
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: var(--clr-primary);
+  color: #fff;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sticky Navbar */
+.sticky-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  /* Semi-transparent white */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Menu Slide Down */
+#mobile-menu.open {
+  transform: translateY(0);
+}
+
+/* Additional Responsive Styles */
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+  /* Hero section adjustments */
+  #hero h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  /* Couple section mobile order */
+  #couple .lg\:order-1 {
+    order: 1;
+  }
+
+  #couple .lg\:order-2 {
+    order: 2;
+  }
+
+  /* Timeline mobile adjustments */
+  #date .md\:w-5\/12 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Gallery mobile grid */
+  #gallery .sm\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  /* Footer mobile adjustments */
+  #footer .md\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    text-align: center;
+  }
+
+  #footer .md\:text-left,
+  #footer .md\:text-right {
+    text-align: center;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Gallery tablet grid */
+  #gallery .lg\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Couple section tablet adjustments */
+  #couple .lg\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Animation enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fallback animations for browsers without AOS */
+.no-aos .fade-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.no-aos .fade-down {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.no-aos .zoom-in {
+  animation: zoomIn 0.8s ease-out;
+}
+
+.no-aos .fade-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.no-aos .fade-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+/* Parallax performance optimization */
+@media (prefers-reduced-motion: reduce) {
+  [data-parallax] {
+    transform: none !important;
+  }
+
+  .animate-bounce {
+    animation: none;
+  }
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid var(--clr-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Print styles */
+@media print {
+  .fixed,
+  #audio-control,
+  #mobile-menu-button,
+  #mobile-menu {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-clr-base {
+    background-color: #ffffff;
+  }
+
+  .text-gray-600 {
+    color: #000000;
+  }
+
+  .border-gray-300 {
+    border-color: #000000;
+  }
+}
+
+/* Dark mode support removed: site uses light mode only */
+
+/*Wave animate */
+/* @keyframes wave-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes wave-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50%);
+
+    t {
+      animation: wave-left 20s linear infinite;
+      will-change: transform;
+    }
+
+    .animate-wave-right {
+      animation: wave-right 30s linear infinite;
+      will-change: transform;
+    }
+  }
+} */

@@ -1,0 +1,33 @@
+/* styles.css */
+.deep-in {
+  perspective: 1000px;
+  /* Memberikan ilusi kedalaman 3D */
+  overflow: hidden;
+  /* Menyembunyikan teks saat di luar pembungkus */
+}
+
+#reveal-inOut {
+  transform-style: preserve-3d;
+  /* Memastikan elemen anak mendukung 3D */
+}
+
+#quote-text {
+  transform-style: preserve-3d;
+  /* Untuk efek translateZ */
+}
+
+#quote-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#verse-text {
+  opacity: 0;
+  /* Awalnya tersembunyi untuk animasi fade-in */
+}

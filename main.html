@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html
+  lang="id"
+  class="smooth overflow-x-hidden dark:bg-[#1a1a1a] dark:text-white"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Akad Nikah Fitri Nabila &amp; Bilawal Hussain</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "", // 👈 penting! aktifkan class mode
+        theme: {
+          extend: {
+            fontFamily: {
+              sacramento: ["Sacramento", "cursive"],
+              playfair: ["Playfair Display", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+              headingSerif: ['"Playfair Display"', "serif"],
+              bodySans: ["Poppins", "sans-serif"],
+              scriptAccent: ['"Dancing Script"', "cursive"],
+            },
+            fontSize: {
+              "h1-size": "clamp(2.2rem, 5vw, 3.8rem)",
+              "h2-size": "clamp(1.6rem, 4vw, 2.4rem)",
+              "body-size": "1rem",
+            },
+            colors: {
+              "wedding-pink": "#f8d7da",
+              "wedding-rose": "#e91e63",
+              "wedding-gold": "#ffd700",
+              "wedding-cream": "#faf7f2",
+              "wedding-sage": "#9caf88",
+              "clr-base": "#f4dcd6",
+              "clr-accent": "#e7b5ad",
+              "clr-primary": "#d81b60",
+              "clr-primary-light": "#f8d3cc",
+              "clr-text": "#333333",
+              "clr-dark": "#111111",
+              dark: "#0a0a0a",
+              "dark-soft": "#1a1a1a",
+              "dark-muted": "#2e2e2e",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              twinkle: "twinkle 2s ease-in-out infinite alternate",
+              "petal-fall": "petalFall 15s linear infinite",
+              "fade-in": "fadeIn 1s ease-in-out",
+              "slide-up": "slideUp 0.8s ease-out",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Favicon & Meta -->
+    <link rel="icon" href="https://fav.farm/🛸" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Dark Mode Storage Check -->
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <!-- Auto Dark Mode -->
+    <script>
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
+    <!-- Data Aos Cdn -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Tailwind Config via CDN -->
+
+    <!-- Custom CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <!-- css text reveal-->
+    <link href="./css/reveal.css" rel="stylesheet" />
+    <!-- Donation Card CSS -->
+    <link href="./donation-card.css" rel="stylesheet" />
+
+    <style>
+      /* Keyframes */
+      @keyframes animate {
+        0% {
+          background-position-x: 0;
+        }
+
+        100% {
+          background-position-x: 1000px;
+        }
+      }
+
+      @keyframes animate2 {
+        0% {
+          background-position-x: 0;
+        }
+
+        100% {
+          background-position-x: -1000px;
+        }
+      }
+
+      /* Keyframe for Svg */
+
+      @keyframes animateSvg {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes animateSvg2 {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Section svg */
+      .wave {
+        height: 150px;
+        line-height: 0;
+        z-index: 0;
+      }
+
+      .wave--top .wave__svg1 {
+        animation: animateSvg 20s linear infinite;
+        opacity: 1;
+        top: 0;
+      }
+
+      .wave--top .wave__svg2 {
+        animation: animateSvg 15s linear infinite;
+        opacity: 0.5;
+        top: 10px;
+      }
+
+      .wave--top .wave__svg3 {
+        animation: animateSvg 12s linear infinite;
+        opacity: 0.2;
+        top: 15px;
+      }
+
+      .wave--top .wave__svg4 {
+        animation: animate 5s linear infinite;
+        opacity: 0.7;
+        top: 20px;
+      }
+
+      .wave--bottom .wave__svg1 {
+        animation: animateSvg 20s linear infinite;
+        opacity: 1;
+        bottom: 0;
+      }
+
+      .wave--bottom .wave__svg2 {
+        animation: animateSvg 15s linear infinite;
+        opacity: 0.5;
+        bottom: 10px;
+      }
+
+      .wave--bottom .wave__svg3 {
+        animation: animateSvg 12s linear infinite;
+        opacity: 0.2;
+        bottom: 15px;
+      }
+
+      .wave--bottom .wave__svg4 {
+        animation: animate 5s linear infinite;
+        opacity: 0.7;
+        bottom: 20px;
+      }
+
+      .wave__svg {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat-x;
+        background-size: cover;
+      }
+    </style>
+
+    <!-- Google Fonts -->
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-...panjang..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="font-bodySans text-clr-text leading-body bg-white dark:bg-[#1a1a1a] text-black dark:text-white snap-y snap-mandatory overflow-x-hidden"
+  >
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-500 transform dark:bg-[#1a1a1a] dark:text-white"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center h-16 px-4"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-scriptAccent text-clr-primary">
+          <a href="#hero">Fitri Nabila &amp; Bilawal Hussain</a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a
+              href="#home"
+              class="hover:text-clr-primary transition-colors duration-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#couple"
+              class="hover:text-clr-primary transition-colors duration-200"
+              >Mempelai</a
+            >
+          </li>
+          <li>
+            <a
+              href="#date"
+              class="hover:text-clr-primary transition-colors duration-200"
+              >Tanggal</a
+            >
+          </li>
+          <li>
+            <a
+              href="#location"
+              class="hover:text-clr-primary transition-colors duration-200"
+              >Lokasi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#rsvp"
+              class="hover:text-clr-primary transition-colors duration-200"
+              >Ucapan</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <svg
+            id="menu-icon"
+            class="w-6 h-6 text-clr-primary"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+          <svg
+            id="close-icon"
+            class="w-6 h-6 text-clr-primary hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-white shadow-lg w-full hidden dark:bg-[#1a1a1a] dark:text-white"
+      >
+        <ul class="flex flex-col items-center py-4 space-y-2">
+          <li>
+            <a
+              href="#home"
+              class="block py-2 px-4 hover:text-clr-primary transition-colors duration-200"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#mempelai"
+              class="block py-2 px-4 hover:text-clr-primary transition-colors duration-200"
+              >Mempelai</a
+            >
+          </li>
+          <li>
+            <a
+              href="#date"
+              class="block py-2 px-4 hover:text-clr-primary transition-colors duration-200"
+              >Tanggal</a
+            >
+          </li>
+          <li>
+            <a
+              href="#location"
+              class="block py-2 px-4 hover:text-clr-primary transition-colors duration-200"
+              >Lokasi</a
+            >
+          </li>
+          <li>
+            <a
+              href="#rsvp"
+              class="block py-2 px-4 hover:text-clr-primary transition-colors duration-200"
+              >Ucapan</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="block h-screen flex items-center justify-center text-center text-white overflow-hidden dark:bg-[#1a1a1a] dark:text-white"
+    >
+      <div
+        id="hero-section"
+        class="absolute flex flex-col items-center justify-center w-screen h-screen overflow-hidden text-center snap-start overflow-hidden"
+      >
+        <img
+          src="./img/langit.png"
+          alt="planet"
+          id="langit"
+          class="absolute w-full h-[1600px] object-cover -z-2 top-0"
+        />
+        <!-- Planet Image (bg3.png - Moon) -->
+        <img
+          src="./img/bulan.png"
+          alt="planet"
+          id="bulan"
+          class="absolute bottom-[60%] -translate-x-1/2 left-1/2 md:w-[700px] z-10"
+        />
+
+        <!-- Foreground Image (bg4.png - Couple) -->
+        <img
+          src="./img/couple.png"
+          alt="background"
+          id="couple"
+          class="absolute w-full h-full object-cover z-40"
+        />
+      </div>
+      <!-- Overlay untuk membuat teks lebih terbaca -->
+      <div class="absolute inset-0 bg-black opacity-35"></div>
+
+      <!-- Konten Hero -->
+      <div class="relative z-10 p-4 max-w-4xl -top-10 md:top-10">
+        <!-- Nama Pengantin dengan font script -->
+        <h1
+          id="home"
+          class="font-scriptAccent text-h1-size mb-4 tracking-wide"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          Fitri Nabila &amp; Bilawal Hussain
+        </h1>
+
+        <!-- Tanggal Pernikahan -->
+        <p
+          class="text-lg md:text-xl mb-8 font-light"
+          data-aos="fade-up"
+          data-aos-delay="250"
+        >
+          Tuesday, 02 February 2026 — Masjid ul Haram, Kabah, Makkah, Saudi
+          Arabia
+        </p>
+
+        <!-- Countdown Timer -->
+        <div
+          id="countdown"
+          class="text-xl md:text-2xl font-bold mb-8 bg-white bg-opacity-20 rounded-lg p-6 backdrop-blur-sm"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <!-- Countdown akan diisi oleh JavaScript -->
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <svg
+          class="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Couple Section -->
+    <section
+      id="couple"
+      class="relative block overflow-x-hidden py-section-y bg-clr-base relative z-30 dark:bg-[#1a1a1a] dark:text-white pt-10"
+    >
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 mt-8 pt-24">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2
+            class="font-headingSerif text-h2-size text-clr-primary mb-4"
+            data-aos="fade-up"
+          >
+            Mempelai
+          </h2>
+          <h4
+            class="font-headingSerif text-h4-size text-clr-primary mb-4"
+            data-aos="fade-out"
+          >
+            بسم الله
+          </h4>
+          <h3
+            class="font-headingSerif text-h3-size text-clr-primary mb-4"
+            data-aos="fade-up"
+          >
+            السلام عليكم ورحمة الله وبركاته
+          </h3>
+          <p
+            id="mempelai"
+            class="text-lg text-gray-600 max-w-2xl mx-auto pt-12"
+          >
+            Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang
+            Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
+          </p>
+        </div>
+
+        <!-- Couple Grid -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto"
+        >
+          <!-- Bride - Mempelai Wanita -->
+          <div
+            class="text-center order-1 lg:order-1"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="relative mb-6">
+              <div
+                class="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white"
+              >
+                <img
+                  src="./img/shf.jpg"
+                  alt="Fitri Nabila"
+                  class="w-full h-full object-cover bg-gradient-to-br from-pink-200 to-pink-300"
+                />
+              </div>
+              <div
+                class="absolute -top-4 -right-4 w-8 h-8 bg-clr-primary rounded-full opacity-20"
+              ></div>
+              <div
+                class="absolute -bottom-4 -left-4 w-6 h-6 bg-clr-accent rounded-full opacity-30"
+              ></div>
+            </div>
+
+            <div class="space-y-3 dark:bg-[#1a1a1a] dark:text-white">
+              <h3
+                class="font-headingSerif text-2xl lg:text-3xl text-clr-primary font-bold"
+              >
+                Mempelai Wanita
+              </h3>
+              <h4
+                class="font-scriptAccent text-3xl lg:text-4xl text-clr-dark mb-2 dark:text-white"
+              >
+                Fitri Nabila
+              </h4>
+              <div class="text-gray-600 leading-relaxed">
+                <p class="mb-2">Putri pertama dari</p>
+                <p class="font-semibold">
+                  Bapak Ahmad Mufarihun &amp; Ibu Uswatun Khasanah
+                </p>
+                <p class="text-sm mt-2 italic">
+                  <!-- Tambahkan informasi tambahan jika diperlukan -->
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative Divider -->
+          <div
+            class="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+          >
+            <div class="bg-white rounded-full p-4 shadow-lg">
+              <svg
+                class="w-8 h-8 text-clr-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Groom - Mempelai Pria -->
+          <div
+            class="text-center order-2 lg:order-2"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <div class="relative mb-6">
+              <div
+                class="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white"
+              >
+                <img
+                  src="./img/pp1.jpg"
+                  alt="Bilawal Hussain"
+                  class="w-full h-full object-cover bg-gradient-to-br from-blue-200 to-blue-300"
+                />
+              </div>
+              <div
+                class="absolute -top-4 -left-4 w-8 h-8 bg-clr-primary rounded-full opacity-20"
+              ></div>
+              <div
+                class="absolute -bottom-4 -right-4 w-6 h-6 bg-clr-accent rounded-full opacity-30"
+              ></div>
+            </div>
+
+            <div class="space-y-3">
+              <h3
+                class="font-headingSerif text-2xl lg:text-3xl text-clr-primary font-bold"
+              >
+                Mempelai Pria
+              </h3>
+              <h4
+                class="font-scriptAccent text-3xl lg:text-4xl text-clr-dark mb-2 dark:text-white"
+              >
+                Bilawal Hussain
+              </h4>
+              <div class="text-gray-600 leading-relaxed">
+                <p class="mb-2">Putra ketiga dari</p>
+                <p class="font-semibold">Bapak Suparlan &amp; Ibu Sriami</p>
+                <p class="text-sm mt-2 italic">
+                  <!-- Tambahkan informasi tambahan jika diperlukan -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote / Ayat -->
+        <div class="deep-in text-center mb-4">
+          <div
+            class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8 dark:bg-[#404040] dark:text-white"
+          >
+            <p
+              id="quote-text"
+              class="font-scriptAccent text-xl lg:text-2xl text-clr-primary mb-4 italic"
+            >
+              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+              untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
+              dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+              kasih dan sayang."
+            </p>
+            <p id="verse-text" class="text-sm text-gray-600 font-semibold">
+              QS. Ar-Rum: 21
+            </p>
+          </div>
+        </div>
+        <!-- tutup quote -->
+      </div>
+    </section>
+
+    <!-- Date Section -->
+    <section
+      id="date"
+      class="py-section-y relative pb-[150px] block overflow-hidden bg-cover bg-center bg-gradient-to-br from-pink-50 to-pink-100"
+      style="background-image: url('../img/pattern7.jpg')"
+    >
+      <!-- Background Overlay -->
+      <div
+        class="absolute inset-0 bg-white bg-opacity-80 dark:text-white dark:bg-[#404040] dark:text-white"
+      ></div>
+
+      <div class="container mx-auto px-4 text-center relative z-10 pt-24">
+        <!-- Section Title -->
+        <div class="mb-12">
+          <h2
+            class="font-headingSerif text-h2-size text-clr-primary mb-4"
+            data-aos="fade-up"
+          >
+            Tanggal Penting
+          </h2>
+          <p
+            class="text-lg text-gray-600 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Dengan penuh kebahagiaan, kami mengundang temen-temen semua untuk
+            hadir dalam momen istimewa kami
+          </p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="relative max-w-4xl mx-auto">
+          <!-- Timeline Line - Hidden on mobile -->
+          <div
+            class="hidden md:block absolute left-1/2 top-0 bottom-24 w-1 bg-clr-primary transform -translate-x-1/2"
+          ></div>
+
+          <!-- Timeline Items -->
+          <div class="space-y-8 md:space-y-8">
+            <!-- Akad Nikah -->
+            <div class="relative" data-aos="fade-up" data-aos-delay="200">
+              <!-- Timeline Dot -->
+              <div
+                class="hidden md:block absolute left-1/2 top-8 w-6 h-6 bg-clr-primary rounded-full transform -translate-x-1/2 border-4 border-white dark:border-black dark:text-white shadow-lg z-10"
+              ></div>
+
+              <!-- Content Card -->
+              <div
+                class="bg-white rounded-lg shadow-lg p-8 md:w-5/12 md:ml-auto relative"
+              >
+                <!-- Mobile Timeline Dot -->
+                <div
+                  class="md:hidden w-4 h-4 bg-clr-primary rounded-full absolute -left-2 top-8"
+                ></div>
+
+                <!-- Event Icon -->
+                <div class="flex justify-center mb-4">
+                  <div
+                    class="w-16 h-16 bg-clr-primary bg-opacity-10 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-8 h-8 text-clr-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Event Details -->
+                <h3
+                  class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+                >
+                  Akad Nikah
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="text-xl font-semibold text-clr-dark">
+                    Selasa, 02 February 2026
+                  </p>
+                  <p class="text-lg">13:00 WIB s.d Selesai</p>
+                  <div class="flex items-center justify-center mt-4">
+                    <svg
+                      class="w-5 h-5 text-clr-primary mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="font-semibold"
+                      >Masjid ul Haram, Kabah, Makkah</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resepsi -->
+            <!-- <div class="relative" data-aos="fade-up" data-aos-delay="350">
+              <div
+                class="hidden md:block absolute left-1/2 top-8 w-6 h-6 bg-clr-primary rounded-full transform -translate-x-1/2 border-4 border-white shadow-lg z-10"
+              ></div>
+
+              <div class="bg-white rounded-lg shadow-lg p-8 md:w-5/12 relative">
+                <div
+                  class="md:hidden w-4 h-4 bg-clr-primary rounded-full absolute -left-2 top-8"
+                ></div>
+
+                <div class="flex justify-center mb-4">
+                  <div
+                    class="w-16 h-16 bg-clr-primary bg-opacity-10 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-8 h-8 text-clr-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <h3
+                  class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+                >
+                  Resepsi
+                </h3>
+                <div class="space-y-2 text-gray-600">
+                  <p class="text-xl font-semibold text-clr-dark">
+                    Selasa, 02 February 2026
+                  </p>
+                  <p class="text-lg">13:00 WIB s.d Selesai</p>
+                  <div class="flex items-center justify-center mt-4">
+                    <svg
+                      class="w-5 h-5 text-clr-primary mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="font-semibold"
+                      >Masjid ul Haram, Kabah, Makkah</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div
+            class="mt-12 mx-auto justify-center items-center text-center"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <button
+              id="add-to-calendar"
+              class="btn-primary inline-flex items-center space-x-2"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-clr-primary"
+                >Simpan ke Kalender – Fitri & Bilawal</span
+              >
+            </button>
+            <p class="text-sm text-gray-500 mt-2">
+              Klik untuk menambahkan ke Google Calendar acara pernikahan Fitri &
+              Bilawal
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Container -->
+    <section
+      class="relative overflow-x-hidden quotes pt-12 top-4 h-[1150px] bg-[url('../img/bg3d2.gif')] bg-cover bg-center bg-no-repeat opacity-80 -z-10 dark:bg-[#1a1a1a] dark:text-white"
+      id="quotes"
+    >
+      <h2
+        class="font-headingSerif text-h2-size text-clr-primary mb-4 text-center"
+        data-aos="fade-up"
+      >
+        Quotes
+      </h2>
+      <div class="relative max-w-4xl mx-4">
+        <!-- Timeline Line - Hidden on mobile -->
+        <div
+          class="hidden md:block absolute left-1/2 top-0 bottom-2 w-1 bg-clr-primary transform -translate-x-1/2"
+        ></div>
+
+        <!-- Timeline Items -->
+        <div class="space-y-16 md:space-y-20 z-50 pt-10">
+          <!-- Slide Right -->
+          <div class="relative slide-right1 will-change-transform">
+            <div
+              class="hidden md:block absolute left-1/2 top-8 w-6 h-6 bg-clr-primary rounded-full transform -translate-x-1/2 border-4 border-white shadow-lg z-10"
+            ></div>
+            <div
+              class="bg-white rounded-lg shadow-lg p-8 md:w-5/12 md:ml-auto relative dark:bg-[#1a1a1a] dark:text-white"
+            >
+              <div
+                class="md:hidden w-4 h-4 bg-clr-primary rounded-full absolute -left-2 top-8"
+              ></div>
+              <h3
+                class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+              >
+                Prioritas – Fitri & Bilawal
+              </h3>
+              <div class="max-w-3xl space-y-2 text-gray-600 typing-text1">
+                <p class="text-sm font-semibold text-clr-dark dark:text-white">
+                  Seorang istri dan anak adalah prioritas utama bagi suami dalam
+                  hal kasih sayang dan nafkah. Namun dalam hal berbakti, seorang
+                  suami tetap memprioritaskan kedua orang tuanya. Dan bagi
+                  seorang wanita yang telah menikah, maka ia wajib
+                  memprioritaskan suaminya.
+                </p>
+                <p class="text-sm mt-2 italic">- Fitri & Bilawal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide Left -->
+          <div class="relative slide-left1 will-change-transform">
+            <div
+              class="hidden md:block absolute left-1/2 top-8 w-6 h-6 bg-clr-primary rounded-full transform -translate-x-1/2 border-4 border-white shadow-lg z-10 dark:bg-[#1a1a1a] dark:text-white"
+            ></div>
+            <div
+              class="bg-white rounded-lg shadow-lg p-8 md:w-5/12 relative dark:bg-[#1a1a1a] dark:text-white"
+            >
+              <div
+                class="md:hidden w-4 h-4 bg-clr-primary rounded-full absolute -left-2 top-8"
+              ></div>
+              <h3
+                class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+              >
+                Pakaian – Fitri & Bilawal
+              </h3>
+              <div class="space-y-2 text-gray-600 typing-text2">
+                <p class="text-sm font-semibold text-clr-dark dark:text-white">
+                  Seorang suami dan istri adalah pakaian bagi masing-masing.
+                  Oleh karena itu mereka harus saling menutupi kekurangan
+                  masing-masing dan tidak boleh menampakkan kekurangan di antara
+                  mereka pada orang lain.
+                </p>
+                <p class="text-sm mt-2 italic">- Fitri & Bilawal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide Right 2 -->
+          <div class="relative slide-right2 top-8 will-change-transform">
+            <div
+              class="hidden md:block absolute left-1/2 top-8 w-6 h-6 bg-clr-primary rounded-full transform -translate-x-1/2 border-4 border-white shadow-lg z-10"
+            ></div>
+            <div
+              class="bg-white rounded-lg shadow-lg p-8 md:w-5/12 md:ml-auto relative bottom-8 dark:bg-[#1a1a1a] dark:text-white"
+            >
+              <div
+                class="md:hidden w-4 h-4 bg-clr-primary rounded-full absolute -left-2 top-8"
+              ></div>
+              <h3
+                id="prioritas-layar-kecil"
+                class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+              >
+                Cerminan Diri – Fitri & Bilawal
+              </h3>
+              <div class="space-y-2 text-gray-600 typing-text3">
+                <p class="text-sm font-semibold text-clr-dark dark:text-white">
+                  Jodoh adalah cerminan diri. Alangkah beruntungnya mereka yang
+                  saling melengkapi dan mencintai karena Allah.
+                </p>
+                <p class="text-sm mt-2 italic">- Fitri & Bilawal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section
+      id="location"
+      class="py-section-y pt-8 overflow-hidden dark:bg-[#1a1a1a] dark:text-white"
+    >
+      <div class="container mx-auto px-4 dark:bg-[#1a1a1a] dark:text-white">
+        <div class="text-center mb-12">
+          <h2
+            id="pakaian-layar-kecil"
+            class="font-headingSerif text-h2-size text-clr-primary mb-4"
+            data-aos="fade-up"
+          >
+            <div id="typing-text-location">Lokasi Acara – Fitri & Bilawal</div>
+          </h2>
+          <p
+            class="text-lg text-gray-600 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Temukan lokasi acara pernikahan Fitri & Bilawal dengan mudah melalui
+            peta di bawah ini
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 dark:bg-[#1a1a1a] dark:text-white"
+        >
+          <!-- Akad Nikah -->
+          <div
+            class="bg-gradient-to-br from-clr-base to-clr-accent rounded-lg p-8 shadow-lg dark:bg-[#1a1a1a] dark:text-white"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="text-center">
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md dark:bg-[#1a1a1a] dark:text-white"
+                >
+                  <svg
+                    class="w-8 h-8 text-clr-primary"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h3
+                class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+              >
+                Akad Nikah – Fitri & Bilawal
+              </h3>
+              <h4
+                id="typing-text-akad-nikah"
+                class="text-xl font-semibold text-clr-dark mb-2"
+              >
+                Rumah mempelai wanita
+              </h4>
+              <p id="cermin-layar-kecil" class="text-gray-600 mb-4">
+                Bina Amarta, Kec. Madang Suku III, Kabupaten Ogan Komering Ulu
+                Timur, Sumatera Selatan
+              </p>
+              <div class="space-y-2">
+                <button
+                  onclick="window.open('https://maps.app.goo.gl/Qgt157aMNkUatSer8', '_blank')"
+                  class="w-full bg-white text-clr-primary px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200"
+                >
+                  Buka di Google Maps
+                </button>
+                <button
+                  onclick="window.open('https://maps.app.goo.gl/Qgt157aMNkUatSer8', '_blank')"
+                  class="w-full bg-clr-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200"
+                >
+                  Petunjuk Arah
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resepsi -->
+          <div
+            class="bg-gradient-to-br from-clr-base to-clr-accent rounded-lg p-8 shadow-lg"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <div class="text-center">
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md dark:bg-[#404040] dark:text-white"
+                >
+                  <svg
+                    class="w-8 h-8 text-clr-primary"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <h3
+                id="resepsi"
+                class="font-headingSerif text-2xl text-clr-primary font-bold mb-3"
+              >
+                Resepsi – Fitri & Bilawal
+              </h3>
+              <h4 class="text-xl font-semibold text-clr-dark mb-2">
+                Rumah mempelai wanita
+              </h4>
+              <p id="typing-text-resepsi" class="text-gray-600 mb-4">
+                Bina Amarta, Kec. Madang Suku III, Kabupaten Ogan Komering Ulu
+                Timur, Sumatera Selatan
+              </p>
+              <div class="space-y-2">
+                <button
+                  onclick="window.open('https://maps.app.goo.gl/Qgt157aMNkUatSer8', '_blank')"
+                  class="w-full bg-white text-clr-primary px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200"
+                >
+                  Buka di Google Maps
+                </button>
+                <button
+                  onclick="window.open('https://maps.app.goo.gl/Qgt157aMNkUatSer8', '_blank')"
+                  class="w-full bg-clr-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors duration-200"
+                >
+                  Petunjuk Arah
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Map -->
+        <div
+          id="cermin"
+          class="bg-gray-100 rounded-lg overflow-hidden shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <div class="relative" style="height: 450px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.1753924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonas!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full"
+            ></iframe>
+            <div
+              class="absolute top-4 left-4 bg-white rounded-lg shadow-lg p-4 max-w-xs"
+            >
+              <h4 class="font-semibold text-clr-primary mb-2">Lokasi Acara</h4>
+              <p class="text-sm text-gray-600">
+                Klik pada marker di peta untuk melihat detail lokasi dan
+                mendapatkan petunjuk arah.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="mt-10 text-center" data-aos="fade-up" data-aos-delay="800">
+          <div class="bg-clr-base rounded-lg p-6 max-w-2xl mx-auto">
+            <h4
+              class="font-headingSerif text-xl text-clr-primary font-bold mb-3"
+            >
+              Informasi Tambahan
+            </h4>
+            <div class="text-gray-600 space-y-2">
+              <p><strong>Parkir:</strong> Tersedia area parkir</p>
+              <p>
+                <strong>Transportasi:</strong> Dapat diakses dengan kendaraan
+                mobil dan motor
+              </p>
+              <p>
+                <strong>Kontak:</strong> Hubungi +6288707082855 (akhwat) untuk
+                informasi lebih lanjut
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section
+      id="rsvp"
+      class="py-section-y relative overflow-hidden bg-cover bg-center text-white bg-gradient-to-br from-clr-primary to-pink-600 top-8 dark:bg-[#1a1a1a] dark:text-white"
+      style="background-image: url('../img/rsvp-bg.jpg')"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Card Donasi - Amplop Digital -->
+      <div class="relative z-10 container mx-auto px-4 mb-12 py-6">
+        <div class="card-container-wrapper">
+          <div class="card-container">
+            <!-- Background decorative elements -->
+            <div class="bg-decoration">
+              <div class="floating-heart"></div>
+              <div class="floating-heart"></div>
+              <div class="floating-heart"></div>
+            </div>
+
+            <!-- Card Cover (Initial State) -->
+            <div class="card-cover" id="cardCover">
+              <div class="cover-content">
+                <div class="icon-wrapper">
+                  <i class="fas fa-gift"></i>
+                </div>
+                <h2 class="cover-title">Turut Bahagia</h2>
+                <p class="cover-subtitle">
+                  Kehadiran Anda adalah hadiah terindah bagi kami
+                </p>
+                <button class="gift-button" id="giftButton">
+                  <i class="fas fa-heart"></i>
+                  <span>🔏</span>
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+                <p class="optional-text">❣️</p>
+              </div>
+            </div>
+
+            <!-- Card Content (Hidden Initially) -->
+            <div class="card-content" id="cardContent">
+              <div class="content-header">
+                <button class="close-button" id="closeButton">
+                  <i class="fas fa-times"></i>
+                </button>
+                <div class="header-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3 class="content-title">Amplop Digital</h3>
+                <p class="content-subtitle">
+                  Terima kasih atas kebaikan hati Anda
+                </p>
+              </div>
+
+              <div class="payment-methods">
+                <!-- Bank Transfer -->
+                <div class="payment-item">
+                  <div class="payment-header">
+                    <div class="payment-icon bank">
+                      <i class="fas fa-university"></i>
+                    </div>
+                    <div class="payment-info">
+                      <h4>Transfer Bank</h4>
+                      <p>BJS - Bank Jago Syariah</p>
+                    </div>
+                    <button class="copy-btn" data-copy="503012123553">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                  <div class="account-details">
+                    <div class="account-number">503012123553</div>
+                    <div class="account-name">Sugeng Saputra</div>
+                  </div>
+                </div>
+
+                <div class="payment-item">
+                  <div class="payment-header">
+                    <div class="payment-icon bank">
+                      <i class="fas fa-university"></i>
+                    </div>
+                    <div class="payment-info">
+                      <h4>Transfer Bank</h4>
+                      <p>BRI - Bank Rakyat Indonesia</p>
+                    </div>
+                    <button class="copy-btn" data-copy="560501024622532">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                  <div class="account-details">
+                    <div class="account-number">560501024622532</div>
+                    <div class="account-name">Sofia Salsabila</div>
+                  </div>
+                </div>
+
+                <!-- E-Wallet Options -->
+                <div class="payment-item">
+                  <div class="payment-header">
+                    <div class="payment-icon gopay">
+                      <i class="fab fa-google-pay"></i>
+                    </div>
+                    <div class="payment-info">
+                      <h4>GoPay</h4>
+                      <p>Scan QR atau transfer</p>
+                    </div>
+                    <button class="copy-btn" data-copy="085158884404">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                  <div class="account-details">
+                    <div class="account-number">085158884404</div>
+                    <div class="account-name">Sugeng Saputra</div>
+                  </div>
+                </div>
+
+                <div class="payment-item">
+                  <div class="payment-header">
+                    <div class="payment-icon dana">
+                      <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="payment-info">
+                      <h4>DANA</h4>
+                      <p>Transfer ke nomor</p>
+                    </div>
+                    <button class="copy-btn" data-copy="085158884404">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                  <div class="account-details">
+                    <div class="account-number">085158884404</div>
+                    <div class="account-name">Sugeng Saputra</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="thank-you-message">
+                <i class="fas fa-heart"></i>
+                <p>
+                  Doa dan restu temen-temen adalah hadiah yang tak ternilai buat
+                  kami
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast Notification -->
+      <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Nomor berhasil disalin!</span>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2
+            class="font-headingSerif text-h2-size text-white mb-4"
+            data-aos="fade-up"
+          >
+            Konfirmasi Kehadiran
+          </h2>
+          <p
+            class="text-lg text-gray-200 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Jangan lupa doanya ya Ikhwah semua :)
+          </p>
+        </div>
+
+        <!-- RSVP Form -->
+        <div class="max-w-2xl mx-auto dark:text-white">
+          <form
+            action="https://docs.google.com/forms/d/e/[FORM_ID]/formResponse"
+            method="POST"
+            id="commentForm"
+            class="bg-white rounded-lg shadow-2xl p-8 text-clr-text dark:bg-[#404040] dark:text-white"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- Form Header -->
+            <div class="text-center mb-8">
+              <div
+                class="relative w-16 h-16 bg-clr-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4 dark:bg-[#1a1a1a] dark:text-white"
+              >
+                <svg
+                  width="64px"
+                  height="64px"
+                  viewBox="-11.44 -11.44 74.88 74.88"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ff1f1f"
+                  stroke="#ff1f1f"
+                  stroke-width="1.508"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <rect
+                      fill="none"
+                      height="4.8"
+                      rx="1.6"
+                      width="27.2"
+                      x="12.4"
+                      y="26"
+                    ></rect>
+                    <rect
+                      fill="none"
+                      height="4.8"
+                      rx="1.6"
+                      width="24"
+                      x="12.4"
+                      y="35.6"
+                    ></rect>
+                    <g>
+                      <path
+                        d="m36.4 14.8h8.48a1.09 1.09 0 0 0 1.12-1.12 1 1 0 0 0 -.32-.8l-10.56-10.56a1 1 0 0 0 -.8-.32 1.09 1.09 0 0 0 -1.12 1.12v8.48a3.21 3.21 0 0 0 3.2 3.2z"
+                      ></path>
+                      <path
+                        d="m44.4 19.6h-11.2a4.81 4.81 0 0 1 -4.8-4.8v-11.2a1.6 1.6 0 0 0 -1.6-1.6h-16a4.81 4.81 0 0 0 -4.8 4.8v38.4a4.81 4.81 0 0 0 4.8 4.8h30.4a4.81 4.81 0 0 0 4.8-4.8v-24a1.6 1.6 0 0 0 -1.6-1.6zm-32-1.6a1.62 1.62 0 0 1 1.6-1.55h6.55a1.56 1.56 0 0 1 1.57 1.55v1.59a1.63 1.63 0 0 1 -1.59 1.58h-6.53a1.55 1.55 0 0 1 -1.58-1.58zm24 20.77a1.6 1.6 0 0 1 -1.6 1.6h-20.8a1.6 1.6 0 0 1 -1.6-1.6v-1.57a1.6 1.6 0 0 1 1.6-1.6h20.8a1.6 1.6 0 0 1 1.6 1.6zm3.2-9.6a1.6 1.6 0 0 1 -1.6 1.63h-24a1.6 1.6 0 0 1 -1.6-1.6v-1.6a1.6 1.6 0 0 1 1.6-1.6h24a1.6 1.6 0 0 1 1.6 1.6z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3
+                class="font-headingSerif text-2xl text-clr-primary font-bold mb-2"
+              >
+                Ada pesan buat kami?
+              </h3>
+              <p class="text-gray-600">Silakan sampaikan pesan kalian :)</p>
+            </div>
+
+            <!-- Nama Field -->
+            <div
+              class="mb-6 dark:text-white"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <label
+                for="name"
+                class="block text-sm font-bold text-clr-dark mb-2 dark:text-white"
+              >
+                Nama Lengkap <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="nameInput"
+                name="entry.111"
+                class="dark:text-clr-dark w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clr-primary focus:border-transparent transition-all duration-200"
+                placeholder="Masukkan nama lengkap Anda"
+                required
+              />
+            </div>
+
+            <!-- Alamat Field -->
+            <div
+              class="mb-6 dark:text-white"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <label
+                for="address"
+                class="block text-sm font-bold text-clr-dark mb-2 dark:text-white"
+              >
+                Alamat
+              </label>
+              <input
+                type="text"
+                id="addressInput"
+                name="entry.222"
+                class="dark:text-clr-dark w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clr-primary focus:border-transparent transition-all duration-200"
+                placeholder="Alamat (opsional)"
+              />
+            </div>
+
+            <!-- Ucapan Field -->
+            <div class="mb-8" data-aos="fade-up" data-aos-delay="700">
+              <label
+                for="message"
+                class="dark:text-white block text-sm font-bold text-clr-dark mb-2"
+              >
+                Ucapan Doa dan Komentar
+              </label>
+              <textarea
+                id="messageInput"
+                name="entry.444"
+                rows="4"
+                class="dark:text-clr-dark w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clr-primary focus:border-transparent transition-all duration-200 resize-none"
+                placeholder="Ucapkan sesuatu..."
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center" data-aos="fade-up" data-aos-delay="800">
+              <button
+                type="submit"
+                class="btn-primary inline-flex items-center space-x-2 px-8 py-3 text-lg font-semibold text-clr-primary font-bold mb-2"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+                  ></path>
+                </svg>
+                <span>Kirim</span>
+              </button>
+              <p class="text-sm text-gray-500 mt-3">
+                Terima kasih atas kunjungannya :)
+              </p>
+            </div>
+          </form>
+
+          <!-- TEMPAT MENAMPILKAN KOMENTAR -->
+          <div
+            id="listKomentar"
+            class="mt-10 space-y-4 text-clr-dark dark:text-white"
+          ></div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="900">
+          <div
+            class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 max-w-lg mx-auto"
+          >
+            <h4 class="font-headingSerif text-xl text-white font-bold mb-3">
+              Butuh Bantuan?
+            </h4>
+            <p class="text-gray-200 mb-4">
+              Jika ada pertanyaan, jangan ragu untuk menghubungi kami
+            </p>
+            <div class="flex justify-center space-x-4">
+              <a
+                href="tel:+6285158884404"
+                class="bg-white text-clr-primary px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center space-x-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  ></path>
+                </svg>
+                <span>Telepon</span>
+              </a>
+              <a
+                href="https://wa.me/6285158884404"
+                class="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200 inline-flex items-center space-x-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.001a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.936 9.936 0 01-1.51-5.282c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.117 1.03 6.988 2.898a9.825 9.825 0 012.893 6.993c-.003 5.45-4.438 9.884-9.887 9.884"
+                  ></path>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Gift Card Animation
+      const giftButton = document.getElementById("giftButton");
+      const cardCover = document.getElementById("cardCover");
+      const cardContent = document.getElementById("cardContent");
+      const closeButton = document.getElementById("closeButton");
+
+      giftButton.addEventListener("click", () => {
+        cardCover.style.display = "none";
+        cardContent.style.display = "block";
+        gsap.fromTo(
+          cardContent,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 0.5 }
+        );
+      });
+
+      closeButton.addEventListener("click", () => {
+        cardContent.style.display = "none";
+        cardCover.style.display = "flex";
+        gsap.fromTo(
+          cardCover,
+          { opacity: 0, y: -50 },
+          { opacity: 1, y: 0, duration: 0.5 }
+        );
+      });
+
+      // Copy to Clipboard
+      const copyButtons = document.querySelectorAll(".copy-btn");
+      const toast = document.getElementById("toast");
+
+      copyButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const value = btn.getAttribute("data-copy");
+          navigator.clipboard.writeText(value).then(() => {
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 2000);
+          });
+        });
+      });
+
+      // Floating Hearts Animation
+      gsap.utils.toArray(".floating-heart").forEach((heart) => {
+        gsap.to(heart, {
+          y: -200,
+          x: gsap.utils.random(-50, 50),
+          scale: gsap.utils.random(0.5, 1.2),
+          duration: gsap.utils.random(3, 6),
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+          delay: gsap.utils.random(0, 2),
+        });
+      });
+    </script>
+  </body>
+</html>

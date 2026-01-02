@@ -1,0 +1,389 @@
+/* ===================================
+   KEYFRAMES ANIMATIONS
+   =================================== */
+
+/* Animasi Float untuk elemen yang melayang */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animasi Twinkle untuk bintang berkedip */
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Animasi untuk kelopak bunga jatuh */
+@keyframes petalFall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi Slide Up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi untuk bintang bergerak */
+@keyframes moveStars {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+/* ===================================
+   BACKGROUND STARS STYLING
+   =================================== */
+
+/* Container untuk semua layer bintang */
+.stars-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Layer bintang pertama - bintang kecil */
+.stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow:
+    /* Bintang kecil dengan posisi random */
+    1541px 1046px #fff,
+    1917px 1236px #fff,
+    1539px 1119px #fff,
+    1166px 1027px #fff,
+    1980px 1132px #fff,
+    1167px 1075px #fff,
+    1337px 1266px #fff,
+    1906px 1042px #fff,
+    1896px 1294px #fff,
+    1976px 1222px #fff,
+    1732px 1281px #fff,
+    1141px 1270px #fff,
+    1581px 1239px #fff,
+    1767px 1062px #fff,
+    1925px 1129px #fff,
+    1970px 1044px #fff,
+    1148px 1251px #fff,
+    1556px 1089px #fff,
+    1727px 1227px #fff,
+    1877px 1157px #fff,
+    1143px 1049px #fff,
+    1993px 1200px #fff,
+    1896px 1134px #fff,
+    1571px 1179px #fff,
+    1607px 1051px #fff,
+    1696px 1299px #fff,
+    1757px 1175px #fff,
+    1941px 1084px #fff,
+    1784px 1221px #fff,
+    1443px 1047px #fff;
+  animation: moveStars 100s linear infinite;
+}
+
+/* Layer bintang kedua - bintang sedang */
+.stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    /* Bintang sedang dengan posisi random */
+    1234px 987px #fff,
+    1876px 1123px #fff,
+    1456px 1234px #fff,
+    1789px 1045px #fff,
+    1234px 1167px #fff,
+    1567px 1289px #fff,
+    1890px 1078px #fff,
+    1345px 1198px #fff,
+    1678px 1134px #fff,
+    1456px 1267px #fff,
+    1789px 1089px #fff,
+    1234px 1156px #fff,
+    1567px 1278px #fff,
+    1890px 1067px #fff,
+    1345px 1187px #fff,
+    1678px 1123px #fff,
+    1456px 1256px #fff,
+    1789px 1078px #fff,
+    1234px 1145px #fff,
+    1567px 1267px #fff;
+  animation: moveStars 150s linear infinite;
+}
+
+/* Layer bintang ketiga - bintang besar */
+.stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+    /* Bintang besar dengan posisi random */
+    1678px 1234px #fff,
+    1234px 1567px #fff,
+    1890px 1123px #fff,
+    1456px 1789px #fff,
+    1234px 1345px #fff,
+    1678px 1567px #fff,
+    1890px 1234px #fff,
+    1456px 1678px #fff,
+    1234px 1890px #fff,
+    1567px 1456px #fff,
+    1789px 1234px #fff,
+    1345px 1567px #fff,
+    1678px 1890px #fff,
+    1234px 1456px #fff,
+    1567px 1789px #fff;
+  animation: moveStars 200s linear infinite;
+}
+
+/* Efek berkedip untuk semua bintang */
+.stars::after,
+.stars2::after,
+.stars3::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+/* ===================================
+   FLOWER PETALS STYLING
+   =================================== */
+
+/* Container untuk kelopak bunga */
+.petals-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* Styling untuk setiap kelopak bunga */
+.petal {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1, #ffc0cb);
+  border-radius: 50% 0 50% 0;
+  opacity: 0.7;
+  animation: petalFall linear infinite;
+  transform-origin: center;
+}
+
+/* Variasi ukuran kelopak */
+.petal.small {
+  width: 8px;
+  height: 8px;
+  opacity: 0.5;
+}
+
+.petal.medium {
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+.petal.large {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+}
+
+/* Variasi warna kelopak */
+.petal.pink {
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+}
+
+.petal.rose {
+  background: linear-gradient(45deg, #e91e63, #f48fb1);
+}
+
+.petal.white {
+  background: linear-gradient(45deg, #ffffff, #f8f9fa);
+}
+
+.petal.cream {
+  background: linear-gradient(45deg, #faf7f2, #f5f5dc);
+}
+
+/* ===================================
+   FORM ENHANCEMENTS
+   =================================== */
+
+/* Efek hover untuk radio buttons */
+.radio-custom {
+  transition: all 0.3s ease;
+}
+
+/* Ketika radio button dipilih */
+input[type="radio"]:checked+.radio-custom .w-2\.5 {
+  opacity: 1;
+}
+
+/* Efek loading button */
+.btn-loading {
+  display: none;
+}
+
+.loading .btn-text {
+  display: none;
+}
+
+.loading .btn-loading {
+  display: flex;
+}
+
+/* ===================================
+   RESPONSIVE ANIMATIONS
+   =================================== */
+
+/* Untuk layar mobile, kurangi intensitas animasi */
+@media (max-width: 768px) {
+
+  .stars,
+  .stars2,
+  .stars3 {
+    animation-duration: 150s, 200s, 250s;
+  }
+
+  .petal {
+    animation-duration: 20s;
+  }
+}
+
+/* Untuk perangkat dengan motion sensitivity */
+@media (prefers-reduced-motion: reduce) {
+
+  .stars,
+  .stars2,
+  .stars3,
+  .petal {
+    animation: none;
+  }
+
+  .animate-float,
+  .animate-twinkle {
+    animation: none;
+  }
+}
+
+/* ===================================
+   ADDITIONAL DECORATIVE ELEMENTS
+   =================================== */
+
+/* Efek shimmer untuk form container */
+.form-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transform: rotate(45deg);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+/* Efek glow untuk tombol submit */
+.submit-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
+  transition: left 0.5s;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
